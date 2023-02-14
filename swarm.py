@@ -42,7 +42,7 @@ class SwarmDeployer(Deployer):
         Args:
              dist: DreamDistribution instance
         Returns:
-            command in format of 'docker-compose [-f loaded configs pathfile] up'
+            TODO:command in format of 'docker stack deploy [-c loaded configs pathfile] [DreamDist.name]'
         """
         config_command_list = []
         dist_path_str = str(dist.resolve_dist_path(dist.name, dist.dream_root)) + "/"
